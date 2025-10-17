@@ -1,0 +1,10 @@
+{
+  "go.useLanguageServer": true,
+  "go.autocompleteUnimportedPackages": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "[go]": {
+    "editor.formatOnSave": true
+  }
+}
