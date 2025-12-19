@@ -131,6 +131,41 @@ func (ll *LinkedList) PrintLinkedList() {
 	fmt.Printf("  ||  Head  =>  %d  Tail  =>  %d  size  =>  %d } \n", ll.Head.Val, ll.Tail.Val, ll.Size)
 }
 
+func (ll *LinkedList) InsertAt(val int, index int) {
+	// empty list & index > 0
+	if ll.Head == nil {
+		return
+	}
+
+	if index == 0 {
+		ll.InsertAtHead(val)
+		return
+	}
+
+	counter := 1
+	prev := ll.Head
+	curr := ll.Head.Next
+	for curr != nil {
+		if counter == index {
+			node := NewDefaultNode(val)
+			prev.Next = node
+			node.Next = curr
+			ll.Size += 1
+			return
+		}
+		prev = curr
+		curr = curr.Next
+		counter += 1
+	}
+	// add at tail
+	if index == counter {
+		node := NewDefaultNode(val)
+		prev.Next = node
+		ll.Tail = node
+		ll.Size += 1
+	}
+}
+
 func NewDefaultLinkedList() *LinkedList {
 	return &LinkedList{
 		Head: nil,
