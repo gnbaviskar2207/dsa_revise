@@ -1,9 +1,6 @@
 package main
 
-import (
-	basicrecursion "github.com/gnbaviskar2207/dsa_revise/basic_recursion"
-	"github.com/gnbaviskar2207/dsa_revise/sorting"
-)
+import linkedlists "github.com/gnbaviskar2207/dsa_revise/linked_lists"
 
 func main() {
 	// dsapatterns.ComputePatternsTwo(5)
@@ -14,7 +11,9 @@ func main() {
 	// str := "madam"
 	// fmt.Print(basicrecursion.IsStringPalindrome(str, 0, len(str)-1))
 	// fmt.Print(basicrecursion.GetFactorial(4))
-	arr := []int{13, 46, 24, 52, 20, 9}
-	sorting.QuickSort(arr, 0, len(arr)-1)
-	basicrecursion.PrintArray(arr)
+	// arr := []int{13, 46, 24, 52, 20, 9}
+	// sorting.QuickSort(arr, 0, len(arr)-1)
+	// basicrecursion.PrintArray(arr)
+
+	linkedlists.LinkedListProblems()
 }
