@@ -1,6 +1,6 @@
 package main
 
-import linkedlists "github.com/gnbaviskar2207/dsa_revise/linked_lists"
+import doublylinkedlist "github.com/gnbaviskar2207/dsa_revise/doubly_linked_list"
 
 func main() {
 	// dsapatterns.ComputePatternsTwo(5)
@@ -15,5 +15,6 @@ func main() {
 	// sorting.QuickSort(arr, 0, len(arr)-1)
 	// basicrecursion.PrintArray(arr)
 
-	linkedlists.LinkedListProblems()
+	// linkedlists.LinkedListProblems()
+	doublylinkedlist.DoublyLinkedProblems()
 }
