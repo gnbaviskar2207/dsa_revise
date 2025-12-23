@@ -1,8 +1,6 @@
 package main
 
-import (
-	bitmanipulation "github.com/gnbaviskar2207/dsa_revise/bit_manipulation"
-)
+import stackquque "github.com/gnbaviskar2207/dsa_revise/stack_quque"
 
 func main() {
 	// dsapatterns.ComputePatternsTwo(5)
@@ -21,5 +19,6 @@ func main() {
 	// doublylinkedlist.DoublyLinkedProblems()
 
 	// recursion.RecursionProblems()
-	bitmanipulation.BitManipulationProblems()
+	// bitmanipulation.BitManipulationProblems()
+	stackquque.StackQueueProblems()
 }
