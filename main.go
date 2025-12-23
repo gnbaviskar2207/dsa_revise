@@ -1,6 +1,8 @@
 package main
 
-import "github.com/gnbaviskar2207/dsa_revise/recursion"
+import (
+	bitmanipulation "github.com/gnbaviskar2207/dsa_revise/bit_manipulation"
+)
 
 func main() {
 	// dsapatterns.ComputePatternsTwo(5)
@@ -18,5 +20,6 @@ func main() {
 	// linkedlists.LinkedListProblems()
 	// doublylinkedlist.DoublyLinkedProblems()
 
-	recursion.RecursionProblems()
+	// recursion.RecursionProblems()
+	bitmanipulation.BitManipulationProblems()
 }
